@@ -10972,23 +10972,15 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
-#about{
+#about,
+#projects,
+#skills,
+#education,
+#services,
+#Contact,
+#experience {
   background-color: #101214;
 }
-#projects{background-color:#101214;}
-#skills{
-  background-color: #101214;
-
-}
-#education{
-  background-color: #101214;}
-#services{
-  background-color: #101214;
-}
-#Contact{
-  background-color:#101214 ;
-}
-
 .haxv{color: var(--bs-orange);}
 .fott{
   background-color: gray;
