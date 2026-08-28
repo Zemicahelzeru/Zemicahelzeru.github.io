@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // Dynamic auto-type string switching (Data Analyst, Full-Stack Developer, AI Enthusiast, Problem Solver)
     if (document.querySelector('.auto-type')) {
         var typed = new Typed(".auto-type", {
-            strings: ["Data Analyst", "Full-Stack Developer", "AI Enthusiast", "Problem Solver"],
+            strings: ["Data Analyst", "Full-Stack Developer", "AI Enthusiast"],
             typeSpeed: 100,
             backSpeed: 80,
             backDelay: 1500,
