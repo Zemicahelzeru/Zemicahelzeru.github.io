@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Dynamic auto-type string switching (Data Analyst, Full-Stack Developer, AI Enthusiast, Problem Solver)
+    // Dynamic auto-type string switching (Data Analyst, Full-Stack Developer, AI Enthusiast)
     if (document.querySelector('.auto-type')) {
         var typed = new Typed(".auto-type", {
             strings: ["Data Analyst", "Full-Stack Developer", "AI Enthusiast"],
