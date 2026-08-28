@@ -3,9 +3,6 @@
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -16,7 +13,7 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#sideNav',
             rootMargin: '0px 0px -40%',
         });
-    };
+    }
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -31,19 +28,24 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-});
-var typed = new Typed(".auto-type",{
-    strings:["Data Analyst","Full Stack Developer","AI Developer","Problem Solver"],
-    typeSpeed:150,
-    backSpeed:150,
-    loop: true
-});
-let currentClass = document.querySelector('.current-class');
-if (currentClass) {
-currentClass.style.color = 'var(--bs-orange)';
-}
-let nextStep = document.querySelector(".try")
-if (nextStep) {
-nextStep.style.color = "#6c757d";
-}
+    // Dynamic auto-type string switching (Data Analyst, Full-Stack Developer, AI Enthusiast, Problem Solver)
+    if (document.querySelector('.auto-type')) {
+        var typed = new Typed(".auto-type", {
+            strings: ["Data Analyst", "Full-Stack Developer", "AI Enthusiast", "Problem Solver"],
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500,
+            loop: true
+        });
+    }
 
+    let currentClass = document.querySelector('.current-class');
+    if (currentClass) {
+        currentClass.style.color = 'var(--bs-orange)';
+    }
+
+    let nextStep = document.querySelector(".try");
+    if (nextStep) {
+        nextStep.style.color = "#6c757d";
+    }
+});
